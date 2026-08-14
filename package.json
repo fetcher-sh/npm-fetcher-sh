@@ -1,6 +1,6 @@
 {
   "name": "@fetcher-sh/api",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "The developer-friendly client for fetcher.sh — 111 pay-per-call web-data endpoints across Twitter/X, YouTube, TikTok, Instagram, Reddit, Google, App Store, and Yelp. Use as an NPM library or CLI.",
   "type": "module",
   "main": "./dist/index.cjs",
