@@ -1,0 +1,76 @@
+{
+  "name": "@fetcher-sh/api",
+  "version": "0.1.0",
+  "description": "The developer-friendly client for fetcher.sh — 111 pay-per-call web-data endpoints across Twitter/X, YouTube, TikTok, Instagram, Reddit, Google, App Store, and Yelp. Use as an NPM library or CLI.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "bin": {
+    "fetcher": "./dist/cli.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node build.js && tsc --emitDeclarationOnly --declaration --outDir dist",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "fetcher",
+    "fetcher.sh",
+    "x402",
+    "web-data",
+    "scraper",
+    "twitter",
+    "x",
+    "youtube",
+    "tiktok",
+    "instagram",
+    "reddit",
+    "google",
+    "google-maps",
+    "google-news",
+    "google-play",
+    "app-store",
+    "yelp",
+    "usdc",
+    "api",
+    "agents",
+    "mcp"
+  ],
+  "author": "fetcher.sh",
+  "license": "MIT",
+  "homepage": "https://fetcher.sh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fetcher-sh/fetcher-sh-npm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fetcher-sh/fetcher-sh-npm/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
