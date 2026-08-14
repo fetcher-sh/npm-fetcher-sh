@@ -59,10 +59,10 @@
   "homepage": "https://fetcher.sh",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fetcher-sh/fetcher-sh-npm.git"
+    "url": "git+https://github.com/fetcher-sh/npm-fetcher-sh.git"
   },
   "bugs": {
-    "url": "https://github.com/fetcher-sh/fetcher-sh-npm/issues"
+    "url": "https://github.com/fetcher-sh/npm-fetcher-sh/issues"
   },
   "engines": {
     "node": ">=18"
